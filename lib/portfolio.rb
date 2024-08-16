@@ -28,6 +28,7 @@ class Portfolio
     annualized_return = if year_percentage.zero? || initial_value.zero?
                           0
                         else
+                          # Annualized return is the percentage difference between the end value and the initial value, divided by the percentage of years that have passed
                           (end_value / initial_value - 1) / year_percentage
                         end
 
