@@ -1,6 +1,7 @@
 # frozen_string_literal: true
 
-require "portfolio"
+require "Portfolio"
+require "Stock"
 
 RSpec.configure do |config|
   # Enable flags like --only-failures and --next-failure

@@ -1,4 +1,5 @@
 # frozen_string_literal: true
+
 # Class that represents a portfolio of stocks
 class Portfolio
   attr_accessor :stocks
@@ -14,6 +15,7 @@ class Portfolio
   def profit(from_date, to_date)
     profit = BigDecimal(0)
     @stocks.each do |stock|
+      # the profit of each stock between two dates is the difference between the price at the end date and the price at the start date
       profit += stock.price(to_date) - stock.price(from_date)
     end
     profit

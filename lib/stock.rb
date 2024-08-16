@@ -1,4 +1,8 @@
 # frozen_string_literal: true
+
+require "Date"
+require "BigDecimal"
+
 # Class that represents a stock
 class Stock
   attr_reader :id
